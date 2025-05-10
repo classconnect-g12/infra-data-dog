@@ -23,6 +23,3 @@ COPY syslog.yaml /etc/datadog-agent/conf.d/syslog.d/
 EXPOSE 8125/udp
 EXPOSE 8126
 EXPOSE 514/udp
-
-# Start the agent
-CMD ["agent", "run"]
