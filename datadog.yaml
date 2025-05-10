@@ -1,2 +1,20 @@
+api_key: ${DD_API_KEY}
+site: ${DD_SITE}
+hostname: ${DD_HOSTNAME}
+
+# Configuración de APM
+apm_config:
+  enabled: true
+  non_local_traffic: true
+  receiver_port: 8126
+  receiver_host: 0.0.0.0
+
+# Configuración de logs
+logs_enabled: true
 logs_config:
   force_use_http: true
+
+# Configuración de DogStatsD
+use_dogstatsd: true
+dogstatsd_port: 8125
+dogstatsd_non_local_traffic: true
