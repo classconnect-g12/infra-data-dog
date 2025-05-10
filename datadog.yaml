@@ -8,24 +8,13 @@ apm_config:
   non_local_traffic: true
   receiver_port: 8126
   receiver_host: 0.0.0.0
-  apm_dd_url: http://trace.agent.${DD_SITE}
-  receiver_socket: /var/run/datadog/apm.socket
 
 # Configuración de logs
 logs_enabled: true
 logs_config:
   force_use_http: true
-  use_http: true
 
 # Configuración de DogStatsD
 use_dogstatsd: true
 dogstatsd_port: 8125
 dogstatsd_non_local_traffic: true
-
-# Configuración específica para Railway
-use_http: true
-apm_config:
-  use_http: true
-  receiver_connection_timeout: 5
-  receiver_read_timeout: 5
-  receiver_write_timeout: 5
