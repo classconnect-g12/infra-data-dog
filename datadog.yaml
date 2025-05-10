@@ -8,6 +8,7 @@ apm_config:
   non_local_traffic: true
   receiver_port: 8126
   receiver_host: 0.0.0.0
+  apm_dd_url: http://trace.agent.${DD_SITE}
 
 # Configuración de logs
 logs_enabled: true
