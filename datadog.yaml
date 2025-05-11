@@ -8,6 +8,11 @@ apm_config:
   non_local_traffic: true
   receiver_port: 8126
   receiver_host: 0.0.0.0
+  max_connections: 2000
+  connection_limit: 2000
+  max_payload_size: 10485760  # 10MB
+  max_connections_per_endpoint: 1000
+  max_connections_per_endpoint_per_second: 100
 
 # Configuración de logs
 logs_enabled: true
