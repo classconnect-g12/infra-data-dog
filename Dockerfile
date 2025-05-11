@@ -1,4 +1,4 @@
-FROM datadog/agent:7
+FROM datadog/agent:latest
 
 # Set environment variables
 ENV DD_LOGS_ENABLED=true
